@@ -88,7 +88,6 @@ const handleUserLogin = async (rawUserData) => {
       },
     });
     if (userItem) {
-      console.log(userItem);
       const checkCorrectPassword = checkPassword(
         rawUserData.password,
         userItem.password
